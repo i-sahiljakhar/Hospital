@@ -13,9 +13,10 @@ import {
   X,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import API_BASE from'../../api';
 
 const DoctorsPage = () => {
-  const API_BASE = "http://localhost:4000";
+  // const API_BASE = "http://localhost:4000";
 
   const [allDoctors, setAllDoctors] = useState([]);
   const [loading, setLoading] = useState(true);

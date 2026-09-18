@@ -4,11 +4,11 @@ import logo from "../assets/logo.png";
 import { useNavigate } from "react-router-dom";
 import { toast, Toaster } from "react-hot-toast";
 import { ArrowLeft } from "lucide-react";
-
+import API_BASE from'../../api';
 const STORAGE_KEY = "doctorToken_v1";
 
 const LoginPage = () => {
-  const API_BASE = "http://localhost:4000";
+  // const API_BASE = "http://localhost:4000";
 
   const [formData, setFormData] = useState({ email: "", password: "" });
   const [busy, setBusy] = useState(false);

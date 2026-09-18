@@ -19,7 +19,8 @@ import {
 import { Toaster } from "react-hot-toast";
 import { useAuth, useUser } from "@clerk/react";
 
-const API_BASE = "http://localhost:4000";
+// const API_BASE = "http://localhost:4000";
+import API_BASE from'../../api';
 const API = axios.create({ baseURL: API_BASE });
 
 function pad(n) {

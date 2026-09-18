@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 import { homeDoctorsStyles, iconSize } from "../assets/dummyStyles";
 import { Link } from "react-router-dom";
 import { ChevronRight, Medal, MousePointer2Off } from "lucide-react";
-
+import API_BASE from'../../api';
 const HomeDoctor = ({ previewCount = 8 }) => {
-  const API_BASE = "http://localhost:4000";
+  // const API_BASE = "http://localhost:4000";
 
   const [doctors, setDoctors] = useState([]);
   const [loading, setLoading] = useState(true);
