@@ -16,9 +16,16 @@ import serviceAppointmentRouter from "./routes/serviceAppointmentRouter.js";
 const app = express();
 const port = 4000;
 
-const allowedOrigins = ["http://localhost:5173",
-  "http://localhost:5174"
+// const allowedOrigins = ["http://localhost:5173",
+//   "http://localhost:5174"
+// ];
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  "http://localhost:5174",
+  "https://hospital-gamma-nine.vercel.app"
 ];
+
 
 app.use(
   cors({
@@ -30,7 +37,7 @@ app.use(
       return callback(new Error("Not allowed by CORS"));
     },
     credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONs"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   }),
 );
@@ -52,5 +59,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server Started on http://localhost:${port}`);
+  console.log(`Server Started on port ${port}`);
 });
