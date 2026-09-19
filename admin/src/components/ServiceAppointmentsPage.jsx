@@ -15,8 +15,8 @@ import {
   Clock3,
   IndianRupee,
 } from "lucide-react";
-
-const API_BASE = "http://localhost:4000";
+import API_BASE from '../../api';
+//const API_BASE = "http://localhost:4000";
 
 function formatTwo(n) {
   return String(n).padStart(2, "0");

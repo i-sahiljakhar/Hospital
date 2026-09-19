@@ -11,7 +11,7 @@ import Appointments from "./pages/Appointments";
 import SerDashboard from "./pages/SerDashboard";
 import AddSer from "./pages/AddSer";
 import ListService from "./pages/ListService";
-import ServiceAppointments from "./pages/Serviceappointments";
+import ServiceAppointments from "./pages/ServiceAppointments";
 
 function RequireAuth({ children }) {
   const { isLoaded, isSignedIn } = useUser();

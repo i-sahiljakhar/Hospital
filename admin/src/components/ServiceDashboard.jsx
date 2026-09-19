@@ -9,7 +9,7 @@ import {
   Search,
   XCircle,
 } from "lucide-react";
-
+import API_BASE from '../../api';
 function normalizeService(doc) {
   if (!doc) return null;
   const id = doc._id || doc.id || String(Math.random()).slice(2);
@@ -53,7 +53,8 @@ function normalizeService(doc) {
     raw: doc,
   };
 }
-const API_BASE = "http://localhost:4000";
+
+// const API_BASE = "http://localhost:4000";
 
 const ServiceDashboard = ({ services: servicesProp = null }) => {
   const [services, setServices] = useState(

@@ -10,9 +10,10 @@ import {
   Trash2,
   XCircle,
 } from "lucide-react";
+import API_BASE from '../../api';
 
 const AddService = ({ serviceId }) => {
-  const API_BASE = "http://localhost:4000";
+  // const API_BASE = "http://localhost:4000";
 
   const fileRef = useRef(null);
   const [imagePreview, setImagePreview] = useState(null);

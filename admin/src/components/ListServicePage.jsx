@@ -11,9 +11,9 @@ import {
   Plus,
 } from "lucide-react";
 import { serviceListStyles as s } from "../assets/dummyStyles";
-
+import API_BASE from '../../api';
 export default function ListServicePage() {
-  const API_BASE = "http://localhost:4000";
+  // const API_BASE = "http://localhost:4000";
 
   const [services, setServices] = useState([]);
   const [openDetails, setOpenDetails] = useState({});
